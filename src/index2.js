@@ -1,16 +1,14 @@
 // js入口文件
 // alert('天气不错')
-import './style.css';
-import Icon from './三三.png'
-
+import printMe from './print.js'
 function component() {
     var element=document.createElement('div');
+    var btn = document.createElement('button');
+
     element.innerHTML='Hello webpack';
-    element.classList.add('hello');
-    var myIcon = new Image();
-    myIcon.src= Icon;
-    element.appendChild(myIcon);
+    btn.innerHTML = 'click me and check the console';
+    btn.onclick=printMe;
+    element.appendChild(btn);
     return element;
 }
-
 document.body.appendChild(component());
