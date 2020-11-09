@@ -1,0 +1,25 @@
+{
+  "name": "webpack-development",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "webpack --watch",
+    "dev": "webpack-dev-server --open",
+    "server": "node server.js",
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-webpack-plugin": "^2.0.2",
+    "express": "^4.17.1",
+    "html-webpack-plugin": "^4.5.0",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-middleware": "^4.0.0"
+  },
+  "dependencies": {
+    "webpack-dev-server": "^3.11.0"
+  }
+}
